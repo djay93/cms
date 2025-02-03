@@ -6,7 +6,7 @@ import { faker } from '@faker-js/faker';
 import { matchSorter } from 'match-sorter';
 import type { ComplianceRegulation } from '@/schemas';
 
-export const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // Mock regulations data store
 export const fakeRegulations = {
